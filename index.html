@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Age</title>
+</head>
+<body>
+	<script>
+		var result = +prompt('Сколько Вам лет?','');
+        result=parseInt(result);
+        var lastNumber = result % 10;
+        if (result >= 10 && result <= 20){
+            alert(result + ' лет')
+        } else if (lastNumber == 1) {
+            alert(result + ' год')
+        } else if (lastNumber >= 2 && lastNumber <= 4){
+            alert(result + ' года')    
+        } else {
+            alert(result + ' лет') 
+        }
+               
+	</script>
+</body>
+</html>
